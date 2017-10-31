@@ -53,6 +53,10 @@ class Day extends Component {
       textStyle.push(this.style.alignedText);
     }
 
+    if (marked.textColor) {
+        textStyle.push({ color: marked.textColor });
+    }
+
     if (this.props.state === 'selected' || marked.selected) {
       containerStyle.push(this.style.selected);
       dotStyle.push(this.style.selectedDot);
