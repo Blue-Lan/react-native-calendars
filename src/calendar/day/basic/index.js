@@ -54,7 +54,7 @@ class Day extends Component {
     }
 
     if (marked.textColor) {
-        textStyle.push({ color: marked.textColor });
+        containerStyle.push({ borderColor: '#b3195c', borderWidth: 1, borderRadius: 16 });
     }
 
     if (this.props.state === 'selected' || marked.selected) {
